@@ -15,8 +15,6 @@ const HandleQrCode = async (qrCode) =>{
     const checkData = store.getState().checkStatus;
     console.log("check data yadine =>",checkData.data.status);
       try{
-
-
       if(checkData.data.status==1){
           if(checkData.data.hasPassword){
              const pass = prompt("Enter password")
