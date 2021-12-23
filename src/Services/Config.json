@@ -1,0 +1,6 @@
+{
+    "yadineapi" : "https://yaadineh.ir/app/api/",
+    "checkStatus" : "check.php",
+    "fetchData" : "get.php"
+}
+
