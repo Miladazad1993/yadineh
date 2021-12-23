@@ -14,9 +14,6 @@ const HandleQrCode = async (qrCode) =>{
 
     const checkData = store.getState().checkStatus;
     console.log("check data yadine =>",checkData.data.status);
-    //  console.log("qrCodeuser yaadine => " , qrCodeUser);
-
-
       try{
 
 
