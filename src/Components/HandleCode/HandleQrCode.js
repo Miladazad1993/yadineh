@@ -6,19 +6,10 @@ import ShowFetch from "../ShowFetch/ShowFetch";
 import { store } from "../Store/Store";
 import HandleFetchData from "./HandleFetchData";
 
-const HandleQrCode = async (qrCode) =>{
-     
-
-    // console.log("urlCode=>" , qrCode);
-    // const[qrCode , setQrCode] = useState("");
-
-    // setQrCode(urlCode);
-
+const HandleQrCode = async (qrCode) =>{ 
     const qrCodeUser={
       qrCode
     } 
-
-    // console.log("qrCodeUser=>",qrCodeUser);
     await store.dispatch(CheckStatusAction(qrCodeUser));
 
     const checkData = store.getState().checkStatus;
