@@ -1,8 +1,5 @@
 import { Fragment } from "react";
-import getQrcode from "../../Services/getQrcodeFromUrl";
 import { CheckStatusAction } from "../Actions/CheckStatusAction";
-import Show from "../ShowFetch/Show";
-import ShowFetch from "../ShowFetch/ShowFetch";
 import { store } from "../Store/Store";
 import HandleFetchData from "./HandleFetchData";
 
@@ -11,7 +8,6 @@ const HandleQrCode = async (qrCode) =>{
       qrCode
     } 
     await store.dispatch(CheckStatusAction(qrCodeUser));
-
     const checkData = store.getState().checkStatus;
     console.log("check data yadine =>",checkData.data.status);
       try{
@@ -49,7 +45,7 @@ const HandleQrCode = async (qrCode) =>{
     
   }
 
-  export default HandleQrCode;
+export default HandleQrCode;
 
   
 
