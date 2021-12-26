@@ -5,7 +5,6 @@ import { store } from "../Store/Store";
 const HandleFetchData = async (fetchData) =>{
     
       try{
-
         await store.dispatch(FetchDataAction(fetchData));
 
         const Fetch = store.getState().getFetchData;
