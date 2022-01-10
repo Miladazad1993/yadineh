@@ -1,5 +1,5 @@
 import { FetchDataAction } from "../Actions/FetchDataAction";
-import Show from "../ShowFetch/Show";
+import ShowFetch from "../ShowFetch/ShowFetch";
 import { store } from "../Store/Store";
 
 const HandleFetchData = async (fetchData) =>{
@@ -8,12 +8,11 @@ const HandleFetchData = async (fetchData) =>{
         await store.dispatch(FetchDataAction(fetchData));
 
         const Fetch = store.getState().getFetchData;
-         console.log("handle fetch message =>",Fetch.data.msg);
-         Show(Fetch)
-
+        console.log("handle fetch message =>",Fetch.data.msg);
+        ShowFetch()
        
       }catch(ex){
-        console.log(ex);
+        console.log(ex);  
       }
   
     
