@@ -19,7 +19,7 @@ const ShowFetch = () => {
 
     const sendRequest = async () => {
       // SkVurYmork   KjPSq8LveT  vVdi4xn67m // => qrCode test
-      const url = "https://yaadine.ir/SkVurYmork";
+      const url = "https://yaadine.ir/KjPSq8LveT";
       const qrCode = getQrcode(url);
       await HandleQrCode(qrCode);
       const getPass = store.getState().checkStatus.data;
